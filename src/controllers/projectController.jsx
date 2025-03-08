@@ -1,7 +1,7 @@
 
 // src/controllers/ProjectController.js
 
-import ProjectModel from './models/ProjectModel';
+import ProjectModel from '../models/projectModel';
 
 export const getProjects = () => {
   const projects = [

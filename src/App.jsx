@@ -86,13 +86,13 @@ const App = () => {
         <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
           My Skills
         </h2>
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-3xl">
           {skillSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="mb-12">
-              <h3 className={`text-xl font-semibold mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+            <div key={sectionIndex} className="mb-4">
+              <h3 className={`text-xl font-semibold mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 {section.title}
               </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+              <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 gap-y-6 justify-items-center items-center px-4">
                 {section.skills.map((skill, index) => (
                   <SkillIcon key={index} skill={skill} darkMode={darkMode} />
                 ))}

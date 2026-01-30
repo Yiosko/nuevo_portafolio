@@ -8,6 +8,17 @@ const InicioProyectos = () => {
             toggleLanguage
         } = useAppContext();
 
+  const translations = {
+    en: {
+      titulo: "Projects TicketSoft",
+    },
+    es: {
+      titulo: "Projectos TiketSoft",
+    }
+  };
+
+  const t = translations[language];
+
     return(
         <>
             <div className={`min-h-screen py-12 px-4 flex flex-col ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
@@ -27,8 +38,14 @@ const InicioProyectos = () => {
                 {darkMode ? '☀️ Light' : '🌙 Dark'}
                 </button>
             </div>
+                <div className="container mx-auto max-w-6xl">
+                    <h1 className={`text-4xl font-bold mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                        {t.titulo}
+                    </h1>
 
-                    <h4>Aun no hay nada</h4>
+                    <p className={`font-medium text-center ${darkMode ? 'text-white' : 'text-gray-800'}`}>NO HAY MÁS CONTENIDO POR AHORA</p>
+                </div>
+                    
             </div>
         </>
     )

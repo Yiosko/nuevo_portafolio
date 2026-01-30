@@ -1,7 +1,10 @@
 import userImg from '../assets/userImg.webp';
 import { FaGithub, FaGitlab, FaLinkedin, FaArrowRight} from 'react-icons/fa';
+import { useNavigate } from 'react-router';
 
 const TextoProject = ({ darkMode, language }) => {
+
+  const navegate = useNavigate();
   const translations = {
     en: {
       experience: "Professional Experience",
@@ -93,7 +96,7 @@ const TextoProject = ({ darkMode, language }) => {
             </ul>
 
             <div className='flex justify-end mt-6'> {/* FOOTER Target */}
-              <button className={`flex items-center gap-3 px-6 py-3 rounded-full font-medium transition-all duration-300 
+              <button onClick={() => navegate('/proyectos/ticket')} className={`flex items-center gap-3 px-6 py-3 rounded-full font-medium transition-all duration-300 
               ${darkMode ? 'bg-white text-gray-900 hover:bg-gray-200' : 'bg-gray-900 text-white hover:bg-gray-800'} hover:gap-4`}>
 
                 {t.ascertain}

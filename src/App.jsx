@@ -5,33 +5,15 @@ import { FaReact, FaPhp, FaJava, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaGitla
 import { SiJavascript, SiTypescript, SiMysql, SiSqlite, SiCodeigniter, SiAngular, SiPostman, SiInsomnia, SiTailwindcss } from 'react-icons/si';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import SkillIcon from './views/SkillIcon';
+import { useAppContext } from './components/context/AppContext';
 
 const App = () => {
-  const [projects, setProjects] = useState([]);
-  const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState('en');
-  const [showButtons, setShowButtons] = useState(true);
-
-  useEffect(() => {
-    const fetchedProjects = getProjects();
-    setProjects(fetchedProjects);
-
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setShowButtons(currentScrollPos < 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'es' : 'en');
-  };
+    const {
+      darkMode,
+      toggleDarkMode,
+      language,
+      toggleLanguage
+    } = useAppContext();
 
   const translations = {
     en: {
@@ -116,8 +98,7 @@ const App = () => {
 
   return (
     <div className={`min-h-screen py-12 px-4 flex flex-col ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
-      <div className="fixed top-4 left-0 right-0 px-4 flex justify-between transition-opacity duration-300" 
-           style={{ opacity: showButtons ? '1' : '0', pointerEvents: showButtons ? 'auto' : 'none' }}>
+      <div className="fixed top-4 left-0 right-0 px-4 flex justify-between transition-opacity duration-300">
         <button 
           onClick={toggleLanguage} 
           className={`px-4 py-2 rounded-lg shadow-lg transition-colors duration-200 ease-in-out

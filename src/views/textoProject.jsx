@@ -43,11 +43,12 @@ const TextoProject = ({ darkMode, language }) => {
       <div className={`max-w-md mx-auto p-8 shadow-lg rounded-t-[6rem] ${
         darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
       } transition-all duration-300 ease-in-out hover:shadow-xl`}>
-        <div className='flex items-center m-auto'>
+        <div className='flex items-center justify-center gap-6'>
+
           <div>
             <p className='rotate-90'>Yiosko</p>
           </div>
-          <img src={userImg} alt="DevIMG" className='text-justify' />
+          <img src={userImg} alt="DevIMG" className="w-40 h-40 md:w-48 md:h-48 object-cover rounded-full" />
           <div className='flex flex-col '> { /* ICONOS */}
             <a href='https://github.com/Yiosko' target='_blank' className='p-4'>{<FaGithub size="2em"/>}</a>
             <a href='https://www.linkedin.com/in/diego-alejandro-gutierrez-flores-a11207321/' target='_blank' className='p-4'>{<FaLinkedin size="2em"/>}</a>

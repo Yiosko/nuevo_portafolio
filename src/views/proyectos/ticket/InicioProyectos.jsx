@@ -1,4 +1,7 @@
 import { useAppContext } from "../../../components/context/AppContext";
+import { getProjects } from "../../../controllers/projectController";
+import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from 'react-router';
 
 const InicioProyectos = () => {
       const {
@@ -7,6 +10,9 @@ const InicioProyectos = () => {
             language,
             toggleLanguage
         } = useAppContext();
+
+    const proyectos = getProjects();
+    const navegate = useNavigate();
 
   const translations = {
     en: {
@@ -43,8 +49,54 @@ const InicioProyectos = () => {
                         {t.titulo}
                     </h1>
 
-                    <p className={`font-medium text-center ${darkMode ? 'text-white' : 'text-gray-800'}`}>NO HAY MÁS CONTENIDO POR AHORA</p>
+                    {
+                    proyectos.map(p => (
+                        <div key={p.id} className={`max-w-4xl mx-auto rounded-lg shadow-lg m-5 ${
+                            darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
+                        } transition-all duration-300 ease-in-out hover:shadow-xl`}>
+
+                            <div className="flex flex-col md:flex-row">
+                                <img src={p.imageUrl} alt={p.title}
+                                    className="w-full h-48 md:w-48 md:h-auto object-cover rounded-t-lg md:rounded-l-lg md:rounded-tr-none"/>
+
+
+                                <div className="p-4 md:p-6 justify-between">
+                                    <h5 className={`text-lg md:text-xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                                        {p.title}
+                                    </h5>
+
+                                    <p className={`text-sm md:text-base mb-4 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                                        {p.description}
+                                    </p>
+
+                                    <span class={`inline-flex items-center rounded-md px-2 py-1 text-xs font-medium mt-4 
+                                        ${darkMode ? 'bg-green-400/10 text-green-400 inset-ring inset-ring-green-500/20' : 'bg-blue-400/10 text-blue-400 inset-ring inset-ring-blue-400/30'  }`}>
+                                        {p.etiquetas}
+                                    </span>
+
+                                    <div className="flex justify-end mt-4">
+                                        <button
+                                            onClick={() => navegate('/')}
+                                            className={`flex items-center justify-center gap-3 px-6 py-3 rounded-full font-medium
+                                            transition-all duration-300
+                                            ${darkMode
+                                                ? 'bg-white text-gray-900 hover:bg-gray-200'
+                                                : 'bg-gray-900 text-white hover:bg-gray-800'}
+                                            `} >
+                                            <FaArrowRight />
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    ))
+                    }
+
                 </div>
+
+                <p className={`font-medium text-center ${darkMode ? 'text-white' : 'text-gray-800'}`}>NO HAY MÁS CONTENIDO POR AHORA</p>
                     
             </div>
         </>

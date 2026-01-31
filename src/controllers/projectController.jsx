@@ -1,12 +1,13 @@
 
 // src/controllers/ProjectController.js
 import imgDashboard from '../assets/proyectos/ticket/imgDashboard.png';
+import imgPQRS from '../assets/proyectos/ticket/imgPQRS.png';
 import ProjectModel from '../models/projectModel';
 
 export const getProjects = () => {
   const projects = [
-    new ProjectModel(1, 'DashBoard', 'Refactorizar el inicio de la pagina renderizando el nombre del cliente que inicia sesión, tambien un tipo de paleta de opciones con animacion', 'FrontEnd - Refactor', imgDashboard, 'http://linkalproyecto1.com'),
-    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', '../assets/proyectos/ticket', 'http://linkalproyecto2.com'),
+    new ProjectModel(1, 'DashBoard', 'Refactorizar el inicio de la pagina renderizando el nombre del cliente que inicia sesión, tambien un tipo de paleta de opciones con animación.', 'FrontEnd - Refactor', imgDashboard, 'http://linkalproyecto1.com'),
+    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', imgPQRS, 'http://linkalproyecto2.com'),
   ];
 
   return projects;

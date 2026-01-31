@@ -1,4 +1,5 @@
 import { useAppContext } from "../../../components/context/AppContext";
+import { getProjects } from "../../../controllers/projectController";
 
 const InicioProyectos = () => {
       const {
@@ -7,6 +8,10 @@ const InicioProyectos = () => {
             language,
             toggleLanguage
         } = useAppContext();
+
+    const proyectos = getProjects();
+
+    console.log(proyectos);
 
   const translations = {
     en: {
@@ -43,8 +48,25 @@ const InicioProyectos = () => {
                         {t.titulo}
                     </h1>
 
-                    <p className={`font-medium text-center ${darkMode ? 'text-white' : 'text-gray-800'}`}>NO HAY MÁS CONTENIDO POR AHORA</p>
+                    {
+                    proyectos.map(p => (
+                        <div key={p.id} className={`max-w-4xl mx-auto p-8 rounded-lg shadow-lg m-2${
+                            darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
+                        } transition-all duration-300 ease-in-out hover:shadow-xl`}>
+
+                        <img src={p.imageUrl} alt="" />
+
+                        <h5 className={`${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                            {p.title}
+                        </h5>
+
+                        </div>
+                    ))
+                    }
+
                 </div>
+
+                <p className={`font-medium text-center ${darkMode ? 'text-white' : 'text-gray-800'}`}>NO HAY MÁS CONTENIDO POR AHORA</p>
                     
             </div>
         </>

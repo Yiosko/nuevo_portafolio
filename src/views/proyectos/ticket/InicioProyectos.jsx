@@ -2,6 +2,7 @@ import { useAppContext } from "../../../components/context/AppContext";
 import { getProjects } from "../../../controllers/projectController";
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from 'react-router';
+import { FaCodeBranch, FaGitAlt, FaCodeMerge} from "react-icons/fa6";
 
 const InicioProyectos = () => {
       const {
@@ -49,6 +50,36 @@ const InicioProyectos = () => {
                         {t.titulo}
                     </h1>
 
+                        <div className={`grid grid-cols-1 sm:grid-cols-3 place-items-center gap-6 max-w-5xl mx-auto p-6 rounded-xl shadow-md mb-12
+                        ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'}
+                        `}>
+
+                        <div className="flex items-center gap-4 p-3 rounded-lg hover:scale-105 transition-transform cursor-default">
+                        <FaGitAlt className="text-3xl text-green-500" />
+                        <div>
+                            <h4 className="text-sm uppercase tracking-wide opacity-70">Commits</h4>
+                            <p className="text-xl font-bold">+700</p>
+                        </div>
+                        </div>
+                        
+                        <div className="flex items-center gap-4 p-3 rounded-lg hover:scale-105 transition-transform cursor-default">
+                        <FaCodeMerge className="text-3xl text-purple-500" />
+                        <div>
+                            <h4 className="text-sm uppercase tracking-wide opacity-70">Merges</h4>
+                            <p className="text-xl font-bold">+200</p>
+                        </div>
+                        </div>
+
+                        <div className="flex items-center gap-4 p-3 rounded-lg hover:scale-105 transition-transform cursor-default">
+                        <FaCodeBranch className="text-3xl text-blue-500" />
+                        <div>
+                            <h4 className="text-sm uppercase tracking-wide opacity-70">Branches</h4>
+                            <p className="text-xl font-bold">+125</p>
+                        </div>
+                        </div>
+
+                    </div>
+
                     {
                     proyectos.map(p => (
                         <div key={p.id} className={`max-w-4xl mx-auto rounded-lg shadow-lg m-5 ${
@@ -69,14 +100,14 @@ const InicioProyectos = () => {
                                         {p.description}
                                     </p>
 
-                                    <span class={`inline-flex items-center rounded-md px-2 py-1 text-xs font-medium mt-4 
+                                    <span className={`inline-flex items-center rounded-md px-2 py-1 text-xs font-medium mt-4 
                                         ${darkMode ? 'bg-green-400/10 text-green-400 inset-ring inset-ring-green-500/20' : 'bg-blue-400/10 text-blue-400 inset-ring inset-ring-blue-400/30'  }`}>
                                         {p.etiquetas}
                                     </span>
 
                                     <div className="flex justify-end mt-4">
                                         <button
-                                            onClick={() => navegate('/')}
+                                            onClick={() => navegate(p.url)}
                                             className={`flex items-center justify-center gap-3 px-6 py-3 rounded-full font-medium
                                             transition-all duration-300
                                             ${darkMode

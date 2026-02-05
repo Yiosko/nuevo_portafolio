@@ -22,18 +22,37 @@ const Welcome = () => {
         }
     };
 
-    const mockJson = {
-        method: 'GET',
-        url: 'controller/api/ModelSesion/obtenerSesion',
-        json: {
-            status: true,
-            message: 'Se a realizado la consulta correctamente',
-            data: {
+    const endpoints = [
+        {
+            id: 'get-session',
+            method: 'GET',
+            url: 'controller/api/ModelSesion/obtenerSesion',
+            description: 'Obtener sesión activa',
+            payload: {
                 cod_station: 1234,
-                usuario_name: 'USUARIO EJEMPLO'
+                usuario_name: 'USUARIO EJEMPLO',
+                password: 'contraseñaSecreta1234'
+            },
+            response: {
+                status: true,
+                message: 'La sesión se realizo correctamente',
+            }
+        },
+        {
+            id: 'logout',
+            method: 'POST',
+            url: 'controller/api/ModelSesion/cerrarSesion',
+            description: 'Cerrar sesión',
+            payload: {
+                status: true,
+                message: 'Sesión cerrada correctamente'
+            },
+            response: {
+
             }
         }
-    };
+    ];
+
 
     return (
         <>
@@ -64,7 +83,7 @@ const Welcome = () => {
                         preview={<Preview />}
                         htmlRaw={htmlDev}
                         cssRaw={styleDev}
-                        jsonContent={mockJson}
+                        endpoints={endpoints}
                         />
                 </div>
             </div>

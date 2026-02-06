@@ -25,7 +25,7 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
 
   useEffect(() => {
     Prism.highlightAll();
-  }, [tab, htmlRaw, cssRaw, activeEndpoint]);
+  }, [tab, htmlRaw, cssRaw, activeEndpoint, apiTab]);
 
   const onHtmlClick = (e) => {
     const match = e.target.textContent.match(/data-dev="(.*?)"/);

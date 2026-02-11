@@ -7,6 +7,7 @@ import './style/index.css'
 import App from './App.jsx'
 import InicioProyectos  from './views/proyectos/ticket/InicioProyectos.jsx';
 import Welcome from './views/proyectos/ticket/dashboard/Welcome.jsx';
+import WelcomePqrs from './views/proyectos/ticket/pqrs/Welcome.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
               <Route path="/" element={ <App /> }/>
               <Route path="/proyectos/ticket" element={ <InicioProyectos /> }/>
               <Route path='/proyectos/ticket/p/dashboard/merge-n!149' element={ <Welcome /> }/>
+              <Route path='/proyectos/ticket/p/dashboard/merge-n!136' element={ <WelcomePqrs /> }/>
 
             </Routes>
         </AppProvider>

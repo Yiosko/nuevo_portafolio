@@ -1,0 +1,1264 @@
+ @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Light-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Light-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Light-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Light-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Light-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Light-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-LightItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-LightItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-LightItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-LightItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-LightItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-LightItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Regular-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Regular-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Regular-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Regular-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Regular-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Regular-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Italic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Italic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Italic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Italic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-Italic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-Italic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBold-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBold-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBold-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBold-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBold-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBold-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBoldItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBoldItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBoldItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBoldItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Mono;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff2/IBMPlexMono-SemiBoldItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Mono/fonts/split/woff/IBMPlexMono-SemiBoldItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Arabic;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff2/IBMPlexSansArabic-Light.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff/IBMPlexSansArabic-Light.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Arabic;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff2/IBMPlexSansArabic-Regular.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff/IBMPlexSansArabic-Regular.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Arabic;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff2/IBMPlexSansArabic-SemiBold.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Arabic/fonts/complete/woff/IBMPlexSansArabic-SemiBold.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Devanagari;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff2/IBMPlexSansDevanagari-Light.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff/IBMPlexSansDevanagari-Light.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Devanagari;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff2/IBMPlexSansDevanagari-Regular.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff/IBMPlexSansDevanagari-Regular.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Devanagari;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff2/IBMPlexSansDevanagari-SemiBold.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Devanagari/fonts/complete/woff/IBMPlexSansDevanagari-SemiBold.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Hebrew;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff2/IBMPlexSansHebrew-Light.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff/IBMPlexSansHebrew-Light.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Hebrew;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff2/IBMPlexSansHebrew-Regular.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff/IBMPlexSansHebrew-Regular.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Hebrew;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff2/IBMPlexSansHebrew-SemiBold.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Hebrew/fonts/complete/woff/IBMPlexSansHebrew-SemiBold.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai Looped;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff2/IBMPlexSansThaiLooped-Light.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff/IBMPlexSansThaiLooped-Light.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai Looped;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff2/IBMPlexSansThaiLooped-Regular.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff/IBMPlexSansThaiLooped-Regular.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai Looped;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff2/IBMPlexSansThaiLooped-SemiBold.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai-Looped/fonts/complete/woff/IBMPlexSansThaiLooped-SemiBold.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff2/IBMPlexSansThai-Light.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff/IBMPlexSansThai-Light.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff2/IBMPlexSansThai-Regular.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff/IBMPlexSansThai-Regular.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans Thai;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff2/IBMPlexSansThai-SemiBold.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans-Thai/fonts/complete/woff/IBMPlexSansThai-SemiBold.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Light-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Light-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Light-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Light-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Light-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-LightItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-LightItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-LightItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-LightItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-LightItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-LightItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Regular-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Regular-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Regular-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Regular-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Regular-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Italic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Italic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Italic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Italic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Italic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-Italic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBold-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBold-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBold-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBold-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBold-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBoldItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBoldItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBoldItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBoldItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: IBM Plex Sans;
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBoldItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff/IBMPlexSans-SemiBoldItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Light-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Light-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Light-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Light-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Light-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Light-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-LightItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-LightItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-LightItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-LightItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-LightItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-LightItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Regular-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Regular-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Regular-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Regular-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Regular-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Regular-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Italic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Italic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Italic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Italic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-Italic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-Italic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBold-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBold-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBold-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBold-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBold-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBold-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Cyrillic.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBoldItalic-Cyrillic.woff) format("woff");
+            unicode-range: "U+0400-045F", "U+0472-0473", "U+0490-049D", "U+04A0-04A5", "U+04AA-04AB", "U+04AE-04B3", "U+04B6-04BB", "U+04C0-04C2", "U+04CF-04D9", "U+04DC-04DF", "U+04E2-04E9", "U+04EE-04F5", "U+04F8-04F9"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Pi.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBoldItalic-Pi.woff) format("woff");
+            unicode-range: "U+0E3F", "U+2032-2033", "U+2070", "U+2075-2079", "U+2080-2081", "U+2083", "U+2085-2089", "U+2113", "U+2116", "U+2126", "U+212E", "U+2150-2151", "U+2153-215E", "U+2190-2199", "U+21A9-21AA", "U+21B0-21B3", "U+21B6-21B7", "U+21BA-21BB", "U+21C4", "U+21C6", "U+2202", "U+2206", "U+220F", "U+2211", "U+221A", "U+221E", "U+222B", "U+2248", "U+2260", "U+2264-2265", "U+25CA", "U+2713", "U+274C", "U+2B0E-2B11", "U+EBE1-EBE7", "U+ECE0", "U+EFCC"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin3.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBoldItalic-Latin3.woff) format("woff");
+            unicode-range: "U+0102-0103", "U+1EA0-1EF9", "U+20AB"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin2.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBoldItalic-Latin2.woff) format("woff");
+            unicode-range: "U+0100-024F", "U+0259", "U+1E00-1EFF", "U+20A0-20AB", "U+20AD-20CF", "U+2C60-2C7F", "U+A720-A7FF", "U+FB01-FB02"
+        }
+
+        @font-face {
+            font-display: "swap";
+            font-family: "IBM Plex Serif";
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff2/IBMPlexSerif-SemiBoldItalic-Latin1.woff2) format("woff2"), url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Serif/fonts/split/woff/IBMPlexSerif-SemiBoldItalic-Latin1.woff) format("woff");
+            unicode-range: "U+0000", "U+000D", "U+0020-007E", "U+00A0-00A3", "U+00A4-00FF", "U+0131", "U+0152-0153", "U+02C6", "U+02DA", "U+02DC", "U+2013-2014", "U+2018-201A", "U+201C-201E", "U+2020-2022", "U+2026", "U+2030", "U+2039-203A", "U+2044", "U+2074", "U+20AC", "U+2122", "U+2212", "U+FB01-FB02"
+        }
+
+.select2-selection__choice {
+            background-color: #0073aa !important;
+        }
+
+        .btn i {
+            margin-right: 0px !important;
+        }
+
+        .btn-sm {
+            padding: 5px 10px;
+        }
+
+        .margin-sm-laterales {
+            margin: 0 3px;
+        }
+
+        th {
+            text-align: center !important;
+        }
+
+        td {
+            padding: 5px 10px !important;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .img_in_table {
+            text-align: center;
+        }
+
+        .img_in_table img {
+            width: 60px;
+        }
+
+
+        /**NAVBAR**/
+        .navbar-logo {
+            background-color: #fff !important;
+        }
+
+        .pcoded-inner-navbar {
+            background-color: #fff !important;
+        }
+
+        .pcoded-inner-navbar a {
+            color: #000 !important;
+        }
+
+        /**NAVBAR**/
+
+
+        /**MODALES**/
+        .modal-header {
+            padding: 5px 10px;
+        }
+
+        /**MODALES**/
+
+        .btn-flotante {
+            display: scroll;
+            position: fixed;
+            bottom: 320px;
+            right: 0px;
+        }
+
+        .select2-container--open {
+            z-index: 9999999
+        }
+
+        #contenedorPublicidad {
+            position: fixed; /* Posición fija en la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999; /* Asegura que esté sobre otros elementos */
+        }
+
+        #contenedorPublicidad {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 99999;
+        }
+
+        #wrapperPublicidad {
+            position: relative;
+            display: inline-block; /* Ajusta el tamaño del contenedor al de la imagen */
+        }
+
+        #imagenPublicidad {
+            max-width: 100%;
+            max-height: 90vh;
+        }
+
+        #cerrarPublicidad {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+            background: #f44336; /* Color de fondo rojo */
+            color: white; /* Color de texto blanco */
+            border: none;
+            border-radius: 50%; /* Borde redondo */
+            width: 30px;
+            height: 30px;
+            font-size: 16px; /* Tamaño de la letra */
+            font-weight: bold; /* Negrita para la 'X' */
+            text-align: center;
+            line-height: 30px; /* Centrar verticalmente el texto */
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para resaltar el botón */
+            transition: background-color 0.3s, transform 0.3s; /* Transición suave para efectos de hover y clic */
+        }
+
+        #cerrarPublicidad:hover {
+            background-color: #d32f2f; /* Cambiar el color al pasar el mouse */
+            transform: translate(50%, -50%) scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+        }
+
+        #cerrarPublicidad:active {
+            background-color: #b71c1c; /* Color al hacer clic */
+        }
+
+        /* Estilos para la ventana pequeña */
+        .popup-whatsapp {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            bottom: 6em; /* Aparece justo arriba del botón */
+            right: 2em;
+            backdrop-filter: blur(3px);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+            0 3px 4px 0 rgba(0, 0, 0, 0.14),
+            0 1px 8px 0 rgba(0, 0, 0, 0.12);
+            z-index: 1028; /* Mismo z-index que el botón */
+        }
+
+        .popup-whatsapp h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .popup-whatsapp p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .popup-whatsapp::-webkit-scrollbar {
+            width: 2px;
+
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .layout-container[data-pending-billing="true"] {
+        .cds--g90 > div:nth-child(2) {
+            margin-top: 48px;
+        }
+
+        .cds--side-nav__navigation {
+            margin-top: 65px;
+        }
+
+        @media (max-width: 931px) {
+            .cds--side-nav__navigation {
+            margin-top: 98px;
+            }
+        }
+        @media (max-width: 736px) {
+            .cds--side-nav__navigation {
+            margin-top: 101px;
+            }
+        }
+
+        @media (max-width: 670px) {
+            .cds--side-nav__navigation {
+            margin-top: 131px;
+            }
+        }
+        }
+
+        @media screen and (min-width: 676px) {
+            .modal-lg {
+                max-width: 1050px; /* New width for default modal */
+            }
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 1.8em;
+            color: #ccc;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: gold;
+        }
+
+
+
+        .title-tk {
+            max-width: 600px;
+            width: 600px;
+            font-size: 1.3em;
+        }
+
+        .clickable
+        {
+            background-color: #FFFFFF;
+        }
+        /*Agregar un efecto de hover*/
+        /* Aplicar transición a los elementos en su estado normal */
+        .clickable {
+            transition: all 0.3s ease; /* Asegúrate de usar 'ease' para una transición más suave */
+            transform: scale(1); /* Estado inicial normal sin escala */
+        }
+
+
+        .clickable:hover {
+            background-color: #f5f5f5; /* Cambio de color de fondo al hacer hover */
+            transform: scale(1.03); /* Ligeramente más grande al hacer hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aplicar sombra suave */
+        }
+
+        /* Ajuste para que el 'box-shadow' desaparezca suavemente */
+        .clickable {
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Estado inicial sin sombra */
+        }
+
+
+        eds-tk {
+            max-width: 510px;
+            width: 150px;
+            font-size: 1.8em;
+        }
+
+        @media (max-width: 1480px) {
+            .title-tk {
+                max-width: 380px;
+                width: 380px;
+            }
+        }
+
+
+        /* Media queries para adaptar elementos en pantallas más pequeñas */
+        @media (max-width: 690px) {
+            .d-title {
+
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .title-tk {
+                max-width: 80%;
+                width: 100%;
+            }
+            .d-body {
+                margin-top: 0.4rem;
+                flex-direction: column;
+                align-content: center;
+                justify-content: space-between;
+                text-align: center;
+            }
+            .rating {
+                margin-top: 0.5rem;
+            }
+        }
+
+
+        @media (max-width: 535px) {
+            .eds-tk {
+
+                max-width: 178px;
+                width: 178px;
+            }
+        }
+
+        .d-container {
+            width: 100%;
+        }
+
+
+        .d-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }

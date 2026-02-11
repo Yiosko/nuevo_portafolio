@@ -7,7 +7,7 @@ import ProjectModel from '../models/projectModel';
 export const getProjects = () => {
   const projects = [
     new ProjectModel(1, 'DashBoard', 'Refactorizar el inicio de la pagina renderizando el nombre del cliente que inicia sesión, tambien un tipo de paleta de opciones con animación.', 'FrontEnd - Refactor', imgDashboard, 'p/dashboard/merge-n!149'),
-    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', imgPQRS, '/'),
+    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', imgPQRS, 'p/dashboard/merge-n!136'),
   ];
 
   return projects;

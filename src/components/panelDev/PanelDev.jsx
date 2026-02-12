@@ -84,7 +84,7 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
           </div>
         </div>
 
-        <div className="flex h-full">
+        <div className="flex overflow-auto h-full">
           {/* LISTADO */}
           <div className="w-1/3 border-r border-slate-700">
             <div className="text-xs uppercase text-slate-400 p-2">

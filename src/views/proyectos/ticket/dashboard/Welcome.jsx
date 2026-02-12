@@ -16,9 +16,13 @@ const Welcome = () => {
     const translations = {
         en: {
         titulo: "Projects TicketSoft",
+        description: `Main dashboard of the TicketSoft system.
+        Provides an overview of the active session, quick access to key modules, and a centralized panel designed to optimize user workflow and efficiency.`
         },
         es: {
         titulo: "Projectos TiketSoft",
+        description: `Dashboard principal del sistema TicketSoft. 
+        Ofrece una vista general del estado de la sesión, accesos rápidos a los módulos más importantes y un panel de opciones diseñado para optimizar la gestión y el tiempo del usuario.`
         }
     };
 
@@ -53,7 +57,7 @@ const Welcome = () => {
         }
     ];
 
-
+    const t = translations[language]
     return (
         <>
             <div className={`min-h-screen py-12 px-4 flex flex-col ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}>
@@ -74,10 +78,14 @@ const Welcome = () => {
                     </button>
                 </div>
 
-                <div className="container text-center mx-auto max-w-7xl">
-                    <h1 className={`text-4xl font-bold mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                <div className="container mx-auto max-w-7xl">
+                    <h1 className={`text-4xl text-center font-bold mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
                         DashBoard
                     </h1>
+
+                    <p className={`font-light mb-6 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+                        {t.description}
+                    </p>
 
                     <PanelDev
                         preview={<Preview />}

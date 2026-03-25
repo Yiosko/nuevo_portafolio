@@ -2,12 +2,14 @@
 // src/controllers/ProjectController.js
 import imgDashboard from '../assets/proyectos/ticket/imgDashboard.png';
 import imgPQRS from '../assets/proyectos/ticket/imgPQRS.png';
+import imgCalificar from '../assets/proyectos/ticket/imgCalificar.png';
 import ProjectModel from '../models/projectModel';
 
 export const getProjects = () => {
   const projects = [
     new ProjectModel(1, 'DashBoard', 'Refactorizar el inicio de la pagina renderizando el nombre del cliente que inicia sesión, tambien un tipo de paleta de opciones con animación.', 'FrontEnd - Refactor', imgDashboard, 'p/dashboard/merge-n!149'),
-    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', imgPQRS, 'p/dashboard/merge-n!136'),
+    new ProjectModel(2, 'PQRS main', 'Agreagar modulo de centro de soluciones funcional para agentes de soportes y clientes, renderizar todos los tickets generados por los clientes y un proceso de asignacion para los agentes', 'FullStack - Feat', imgPQRS, 'p/pqrs/merge-n!136'),
+    new ProjectModel(3, 'PQRS grade', 'Refactorización del módulo de calificación del Centro de Soluciones, incorporando un sistema de evaluación mediante estrellas para medir la calidad de la solución y la atención del agente, junto con la generación de reportes históricos.', 'FullStack - refactor', imgCalificar, 'p/pqrs-calificar/merge-n!137'),
   ];
 
   return projects;

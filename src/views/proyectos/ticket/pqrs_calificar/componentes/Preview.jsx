@@ -1,11 +1,11 @@
 import htmlDev from "./index.html?raw";
 import styleDev from "./style.css?raw";
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
 
-import './style.css'
+import "./style.css";
 
 const Preview = ({ iframeRef }) => {
-        const srcDoc = `
+  const srcDoc = `
         <!DOCTYPE html>
         <html>
         <head>
@@ -56,16 +56,18 @@ const Preview = ({ iframeRef }) => {
         </body>
         </html>
     `;
-    return (<>
-        <>
-            <iframe
-            ref={iframeRef}
-            srcDoc={srcDoc}
-            className="w-full h-full border-none"
-            sandbox="allow-scripts allow-same-origin"
-            />
-        </>
-    </>);
-}
+  return (
+    <>
+      <>
+        <iframe
+          ref={iframeRef}
+          srcDoc={srcDoc}
+          className="w-full h-full border-none"
+          sandbox="allow-scripts allow-same-origin"
+        />
+      </>
+    </>
+  );
+};
 
 export default Preview;

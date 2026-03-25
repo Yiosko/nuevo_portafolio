@@ -6,6 +6,9 @@ import { SiJavascript, SiTypescript, SiMysql, SiSqlite, SiCodeigniter, SiAngular
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import SkillIcon from './views/SkillIcon';
 import { useAppContext } from './components/context/AppContext';
+import { Button } from "./components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card";
+import { motion } from "framer-motion";
 
 const App = () => {
     const {
@@ -120,82 +123,77 @@ const App = () => {
         </h1>
         
         {/* About Me Section */}
-        <div className="mb-16">
+        <motion.div className="mb-16" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <TextoProject darkMode={darkMode} language={language} />
-        </div>
+        </motion.div>
 
         {/* Skills Section */}
-        <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-          {t.skills}
-        </h2>
-        <div className="container mx-auto max-w-3xl">
-          {skillSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="mb-4">
-              <h3 className={`text-xl font-semibold mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                {section.title}
-              </h3>
-              <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 gap-y-6 justify-items-center items-center px-4">
-                {section.skills.map((skill, index) => (
-                  <SkillIcon key={index} skill={skill} darkMode={darkMode} />
-                ))}
+        <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}>
+          <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+            {t.skills}
+          </h2>
+          <div className="container mx-auto max-w-3xl">
+            {skillSections.map((section, sectionIndex) => (
+              <div key={sectionIndex} className="mb-4">
+                <h3 className={`text-xl font-semibold mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  {section.title}
+                </h3>
+                <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 gap-y-6 justify-items-center items-center px-4">
+                  {section.skills.map((skill, index) => (
+                    <SkillIcon key={index} skill={skill} darkMode={darkMode} />
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* Projects Section */}
-        <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
-          {t.projects}
-        </h2>
-        <div className="container mx-auto max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className={`rounded-lg overflow-hidden shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105`}>
-            <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/calculadora-project.png" alt="Calculator Project" />
-            <div className="p-4">
-              <h3 className={`font-bold text-lg mb-2 ${darkMode ? 'text-white' : 'text-gray-800'}`}>{t.calculatorTitle}</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{t.calculatorDesc}</p>
-              <a
-                href="https://calculator-aesthetic.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-block mt-4 px-4 py-2 rounded ${darkMode ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-500 hover:bg-blue-600'} text-white transition-colors duration-200`}
-              >
-                {t.viewProject}
-              </a>
-            </div>
-          </div>
+        <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }}>
+          <h2 className={`text-3xl font-bold text-center mb-12 ${darkMode ? 'text-white' : 'text-gray-800'}`}>
+            {t.projects}
+          </h2>
+          <div className="container mx-auto max-w-3xl grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/calculadora-project.png" alt="Calculator Project" />
+              <CardContent>
+                <CardTitle>{t.calculatorTitle}</CardTitle>
+                <CardDescription>{t.calculatorDesc}</CardDescription>
+                <Button asChild className="mt-4">
+                  <a href="https://calculator-aesthetic.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    {t.viewProject}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
 
-          <div className={`rounded-lg overflow-hidden shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105`}>
-            <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/tapazo-img.png" alt="Tapazo Project" />
-            <div className="p-4">
-              <h3 className={`font-bold text-lg mb-2 ${darkMode ? 'text-white' : 'text-gray-800'}`}>{t.tapazoTitle}</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{t.tapazoDesc}</p>
-              <a
-                href="https://tapazo-indol.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-block mt-4 px-4 py-2 rounded ${darkMode ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-500 hover:bg-blue-600'} text-white transition-colors duration-200`}
-              >
-                {t.viewProject}
-              </a>
-            </div>
-          </div>
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/tapazo-img.png" alt="Tapazo Project" />
+              <CardContent>
+                <CardTitle>{t.tapazoTitle}</CardTitle>
+                <CardDescription>{t.tapazoDesc}</CardDescription>
+                <Button asChild className="mt-4">
+                  <a href="https://tapazo-indol.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    {t.viewProject}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
 
-          <div className={`rounded-lg overflow-hidden shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'} hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105`}>
-            <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/triqui-img.png" alt="Triqui Game" />
-            <div className="p-4">
-              <h3 className={`font-bold text-lg mb-2 ${darkMode ? 'text-white' : 'text-gray-800'}`}>{t.triquiTitle}</h3>
-              <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>{t.triquiDesc}</p>
-              <a
-                href="https://triqui-ink.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-block mt-4 px-4 py-2 rounded ${darkMode ? 'bg-blue-600 hover:bg-blue-700' : 'bg-blue-500 hover:bg-blue-600'} text-white transition-colors duration-200`}
-              >
-                {t.viewProject}
-              </a>
-            </div>
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+              <img className="w-full h-48 object-cover" src="https://portafolio-web-oiao.vercel.app/img-proyectos/triqui-img.png" alt="Triqui Game" />
+              <CardContent>
+                <CardTitle>{t.triquiTitle}</CardTitle>
+                <CardDescription>{t.triquiDesc}</CardDescription>
+                <Button asChild className="mt-4">
+                  <a href="https://triqui-ink.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    {t.viewProject}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

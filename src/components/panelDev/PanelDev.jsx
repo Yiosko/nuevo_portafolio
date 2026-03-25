@@ -6,7 +6,7 @@ import "prismjs/components/prism-markup";
 import "prismjs/components/prism-css";
 import "prismjs/components/prism-json";
 
-const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
+const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints }) => {
   const [activeEndpoint, setActiveEndpoint] = useState(endpoints?.[0] ?? null);
   const [tab, setTab] = useState("html");
   const [leftWidth, setLeftWidth] = useState(50);
@@ -33,7 +33,7 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
 
     iframeRef.current?.contentWindow?.postMessage(
       { type: "HIGHLIGHT", id: match[1] },
-      "*"
+      "*",
     );
   };
 
@@ -63,7 +63,11 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
         <div className="flex flex-col h-1/2 border-b border-slate-700">
           <div className="flex border-b border-slate-700">
             {["html", "css"].map((t) => (
-              <button key={t} onClick={() => setTab(t)}className={`px-4 py-2 ${ tab === t ? "bg-slate-700" : ""}`}>
+              <button
+                key={t}
+                onClick={() => setTab(t)}
+                className={`px-4 py-2 ${tab === t ? "bg-slate-700" : ""}`}
+              >
                 {t.toUpperCase()}
               </button>
             ))}
@@ -91,48 +95,46 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
               Endpoints
             </div>
 
-            {endpoints?.length > 0 && endpoints.map((ep) => (
-              <button
-                key={ep.id}
-                onClick={() => setActiveEndpoint(ep)}
-                className={`w-full text-left px-3 py-2 text-sm border-b border-slate-800
+            {endpoints?.length > 0 &&
+              endpoints.map((ep) => (
+                <button
+                  key={ep.id}
+                  onClick={() => setActiveEndpoint(ep)}
+                  className={`w-full text-left px-3 py-2 text-sm border-b border-slate-800
                   hover:bg-slate-800
-                  ${activeEndpoint?.id === ep.id ? 'bg-slate-800' : ''}
+                  ${activeEndpoint?.id === ep.id ? "bg-slate-800" : ""}
                 `}
-              >
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`text-xs px-2 py-0.5 rounded
-                      ${ep.method === 'GET' ? 'bg-green-700' : 'bg-blue-700'}
+                >
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`text-xs px-2 py-0.5 rounded
+                      ${ep.method === "GET" ? "bg-green-700" : "bg-blue-700"}
                     `}
-                  >
-                    {ep.method}
-                  </span>
-                  <span className="truncate">{ep.url}</span>
-                </div>
-                <div className="text-xs text-slate-400">
-                  {ep.description}
-                </div>
-              </button>
-            ))}
+                    >
+                      {ep.method}
+                    </span>
+                    <span className="truncate">{ep.url}</span>
+                  </div>
+                  <div className="text-xs text-slate-400">{ep.description}</div>
+                </button>
+              ))}
           </div>
 
           {/* PAYLOAD */}
           <div className="flex-1 overflow-auto p-2">
             <div className="flex gap-2 mb-2">
-              {["payload", "response"].map(t => (
+              {["payload", "response"].map((t) => (
                 <button
                   key={t}
                   onClick={() => setApiTab(t)}
                   className={`px-3 py-1 text-xs rounded
-                    ${apiTab === t ? 'bg-slate-700' : 'bg-slate-800'}
+                    ${apiTab === t ? "bg-slate-700" : "bg-slate-800"}
                   `}
                 >
                   {t.toUpperCase()}
                 </button>
               ))}
             </div>
-
 
             {activeEndpoint && (
               <pre className="text-sm font-mono">
@@ -143,7 +145,6 @@ const PanelDev = ({ preview, htmlRaw, cssRaw, endpoints}) => {
             )}
           </div>
         </div>
-
       </div>
     </div>
   );
